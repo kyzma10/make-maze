@@ -34,7 +34,9 @@ module.exports = {
    },
   plugins: [
     new HTMLWebpackPlugin({
-      title: 'Code Splitting'
+      title: 'Make maze',
+      template: './src/index.html',
+      filename: 'index.html',
     }),
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin()
